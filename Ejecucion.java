@@ -1,9 +1,12 @@
 package examen;
 
+import java.util.Scanner;
+
 class Ejecucion
 {
 	public void IniciarPrograma()
 	{
+		Extra extra = new Extra ();
 		Palabras palabra1 = new Palabras ("hasta luego cocodrilo");
 		Palabras palabra2 = new Palabras ("anita lava la tina");
 		
@@ -24,5 +27,20 @@ class Ejecucion
 		System.out.println ("Cambiar las vocales en mayúsculas: ");
 		palabra2.convertirVocalesMayuscula();
 		palabra2.checarPalindromo();
+		
+		Scanner scanner = new Scanner (System.in);
+		System.out.print("¿Imprimir metodo FizzBuzz? (Si/No):");
+		
+		String opcion = scanner.nextLine ().toLowerCase().trim ();
+	
+		if (opcion.equals("si"))
+		{
+			extra.crearFizzBuzz();
+		}
+		else;
+		{
+			System.out.print("¡Hasta pronto!");
+		}
+		scanner.close ();
 	}
 }
