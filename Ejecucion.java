@@ -29,7 +29,7 @@ class Ejecucion
 		palabra2.checarPalindromo();
 		
 		Scanner scanner = new Scanner (System.in);
-		System.out.print("¿Imprimir metodo FizzBuzz? (Si/No):");
+		System.out.print("¿Desea imprimir el metodo FizzBuzz? (Si/No):");
 		
 		String opcion = scanner.nextLine ().toLowerCase().trim ();
 	
